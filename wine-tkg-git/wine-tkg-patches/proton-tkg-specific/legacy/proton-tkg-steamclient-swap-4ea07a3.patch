@@ -100,7 +100,7 @@ index 0fe79ee499c..adaaa6acaf6 100644
 +    UINT_PTR page_mask;
 +    int i;
 +
-+    virtual_get_system_info(&info);
++    virtual_get_system_info(&info,0);
 +    page_mask = info.PageSize - 1;
 +
 +    for (i = 0; i < src_nt->FileHeader.NumberOfSections; ++i)
