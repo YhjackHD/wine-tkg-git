@@ -1,0 +1,11 @@
+--- a/dlls/kernelbase/process.c
++++ b/dlls/kernelbase/process.c
+@@ -34,6 +34,8 @@
+ #include "kernelbase.h"
+ #include "wine/debug.h"
+ 
++WCHAR * WINAPI StrStrW(const WCHAR *str, const WCHAR *search) ;
++
+ WINE_DEFAULT_DEBUG_CHANNEL(process);
+ 
+ static DWORD shutdown_flags = 0;

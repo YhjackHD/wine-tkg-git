@@ -1298,6 +1298,9 @@ _prepare() {
 	if [ "$_clang_declspec_fix" = "true" ]; then
 	  _patchname='clang_declspec_align.patch' && _patchmsg="Applied clang_declspec_align patch" && nonuser_patcher
 	fi
+	if [ "$_StrStrW_mismatch_fix" = "true" ]; then
+	  _patchname='StrStrW_mismatch.patch' && _patchmsg="Applied StrStrW_mismatch patch" && nonuser_patcher
+	fi
 	# Launch with dedicated gpu desktop entry patch
 	if [ "$_launch_with_dedicated_gpu" = "true" ]; then
 	  _patchname='launch-with-dedicated-gpu-desktop-entry.patch' && _patchmsg="Applied launch with dedicated gpu desktop entry patch" && nonuser_patcher
