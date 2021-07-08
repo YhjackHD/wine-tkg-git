@@ -1,0 +1,29 @@
+--- a/dlls/opencl/make_opencl
++++ b/dlls/opencl/make_opencl
+@@ -513,9 +513,9 @@
+ print TYPES <<END
+ /* Automatically generated from OpenCL registry files; DO NOT EDIT! */
+ 
+-typedef int32_t cl_int DECLSPEC_ALIGN(4);
+-typedef uint32_t cl_uint DECLSPEC_ALIGN(4);
+-typedef uint64_t cl_ulong DECLSPEC_ALIGN(8);
++typedef int32_t cl_int __attribute__((aligned(4)));
++typedef uint32_t cl_uint __attribute__((aligned(4)));
++typedef uint64_t cl_ulong __attribute__((aligned(8)));
+ 
+ END
+ ;
+--- a/dlls/opencl/opencl_types.h
++++ b/dlls/opencl/opencl_types.h
+@@ -1,8 +1,8 @@
+ /* Automatically generated from OpenCL registry files; DO NOT EDIT! */
+ 
+-typedef int32_t cl_int DECLSPEC_ALIGN(4);
+-typedef uint32_t cl_uint DECLSPEC_ALIGN(4);
+-typedef uint64_t cl_ulong DECLSPEC_ALIGN(8);
++typedef int32_t cl_int __attribute__((aligned(4)));
++typedef uint32_t cl_uint __attribute__((aligned(4)));
++typedef uint64_t cl_ulong __attribute__((aligned(8)));
+ 
+ typedef struct _cl_platform_id *      cl_platform_id;
+ typedef struct _cl_device_id *        cl_device_id;

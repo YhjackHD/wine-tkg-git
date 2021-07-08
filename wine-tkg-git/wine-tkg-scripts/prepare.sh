@@ -1295,6 +1295,9 @@ _prepare() {
 	fi
 	# /esync
 
+	if [ "$_clang_declspec_fix" = "true" ]; then
+	  _patchname='clang_declspec_align.patch' && _patchmsg="Applied clang_declspec_align patch" && nonuser_patcher
+	fi
 	# Launch with dedicated gpu desktop entry patch
 	if [ "$_launch_with_dedicated_gpu" = "true" ]; then
 	  _patchname='launch-with-dedicated-gpu-desktop-entry.patch' && _patchmsg="Applied launch with dedicated gpu desktop entry patch" && nonuser_patcher
