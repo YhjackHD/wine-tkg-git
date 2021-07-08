@@ -9210,7 +9210,7 @@ index 000000000..36370efcb
 ++
 + static void fixup_ntdll_imports( const IMAGE_NT_HEADERS *nt )
 + {
-+     const IMAGE_EXPORT_DIRECTORY *ntdll_exports = get_export_dir( ntdll_module );
++     const IMAGE_EXPORT_DIRECTORY *ntdll_exports = get_module_data_dir( ntdll_module,IMAGE_FILE_EXPORT_DIRECTORY,NULL );
 +@@ -828,6 +863,8 @@ static void fixup_ntdll_imports( const IMAGE_NT_HEADERS *nt )
 +         thunk_list++;
 +     }
