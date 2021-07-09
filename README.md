@@ -38,7 +38,9 @@ For Gallium 9 support, use https://github.com/iXit/wine-nine-standalone (availab
 
 Requaired:
 
-i686-w64-mingw32-gcc + x86_64-w64-mingw32-gcc
+i686-w64-mingw32-gcc( posix threads ONLY , https://sourceforge.net/p/mingw-w64/mailman/message/37276267/ patch for `__udivmoddi4()` )
+
+x86_64-w64-mingw32-gcc( posix threads ONLY )
 
 Python:
 
