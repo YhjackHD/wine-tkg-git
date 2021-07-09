@@ -36,7 +36,7 @@ Thanks to @Firerat and @bobwya for their rebase work :
 
 For Gallium 9 support, use https://github.com/iXit/wine-nine-standalone (available from winetricks and AUR) - Legacy nine support can still be turned on if you're building a 4.1 base or older.
 
-Requaired:
+Required:
 
 i686-w64-mingw32-gcc( posix threads ONLY , https://sourceforge.net/p/mingw-w64/mailman/message/37276267/ patch for `__udivmoddi4()` )
 
