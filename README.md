@@ -37,6 +37,10 @@ Thanks to @Firerat and @bobwya for their rebase work :
 For Gallium 9 support, use https://github.com/iXit/wine-nine-standalone (available from winetricks and AUR) - Legacy nine support can still be turned on if you're building a 4.1 base or older.
 
 Requaired:
+
 i686-w64-mingw32-gcc + x86_64-w64-mingw32-gcc
+
 Python:
+
 fontTools
+
